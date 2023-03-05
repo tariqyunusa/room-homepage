@@ -22,7 +22,7 @@ main{
     top: -135px;
 }
 .img-container{
-    width: 60%;
+    width: 191%;
     
     background: url(./images/desktop-image-hero-1.jpg);
     background-repeat: no-repeat;
@@ -31,6 +31,9 @@ main{
    
 
 
+}
+.mobile-nav-toggle{
+    display: none;
 }
 nav{
     
