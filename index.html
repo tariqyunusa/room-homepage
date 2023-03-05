@@ -5,12 +5,55 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <title>Frontend Mentor | Room homepage</title>
-  <link rel="stylesheet" href="style.css">
-  <script src="script.js" defer></script>
+  <link rel="stylesheet" href="./style.css">
+  <script src="./script.js" defer></script>
 </head>
 <body>
- 
-  
-  
+  <main>
+      
+      <nav>
+        <div class="logo">
+        <img src="./images/logo.svg" alt="logo">
+        <button class="mobile-nav-toggle"  aria-controls="primary-navigation" aria-expanded="false"><span ></span> </button>
+
+      </div>
+        <ul id="primary-navigation" data-visible="false" class="primary-navigation flex">
+          <li><a >Home</a></li>
+          <li><a >Shop</a></li>
+          <li><a >About</a></li>
+          <li><a >Contact</a></li>
+        </ul>
+      </nav>
+    
+    <div class="first-hero">
+      <div class="img-container"></div>
+        <div class="shop-now"> 
+          <div class="container_shop">
+            <h1>Discover innovative ways to decorate</h1>
+            <p>We provide unmatched quality, comfort, and style for property owners across the country. 
+              Our experts combine form and function in bringing your vision to life. Create a room in your 
+              own style with our collection and make your property a reflection of you and what you love.</p>
+              <a href="">Shop now <img src="./images/icon-arrow.svg" alt=""></a>
+          </div>
+          <a href="" class="button left"><span><img src="./images/icon-angle-left.svg" alt=""></span></a>
+          <a href="" class="button right"><span><img src="./images/icon-angle-right.svg" alt=""></span></a>
+        </div>
+       
+    </div>
+    <div class="second_hero">
+          <div class="about_dark"></div>
+          <div class="about">
+            <h1>About our furniture</h1>
+            <p>Our multifunctional collection blends design and function to suit your individual taste.
+              Make each room unique, or pick a cohesive theme that best express your interests and what
+              inspires you. Find the furniture pieces you need, from traditional to contemporary styles
+              or anything in between. Product specialists are available to help you create your dream space.</p>
+          </div>
+          <div class="about_light"></div>
+        </div>
+
+   
+
+  </main>
 </body>
 </html>

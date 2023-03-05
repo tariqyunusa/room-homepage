@@ -1,1 +1,321 @@
 @import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@500;600;700&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body, html{
+    height: 100vh;
+    width: 100%;
+    font-family: 'League Spartan', sans-serif;
+
+}
+main{
+    width: 100%;
+    height: 100vh;
+}
+.first-hero{
+    width: 100%;
+    height: 70vh;
+    display: flex;
+    position: relative;
+    top: -135px;
+}
+.img-container{
+    width: 60%;
+    
+    background: url(./images/desktop-image-hero-1.jpg);
+    background-repeat: no-repeat;
+    object-fit: cover;
+    background-size: 100% 100%;
+   
+
+
+}
+nav{
+    
+    width: 100%;
+    height: 15%;
+    display: flex;
+    background: none;
+    z-index: 1;
+    position: relative;
+    color: #fff;
+    
+}
+.logo{
+    width: 12%;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+ul{
+    display: flex;
+    width: 100%;
+    
+}
+ul li{
+    list-style: none;
+    width: 100px;
+    padding: 0 10px;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;top: 50%;
+}
+ul li a{
+    text-decoration: none;
+    position: absolute;
+    cursor: pointer;
+    position: relative;
+    
+}
+ul li a:hover{
+    border-bottom: 2px solid #fff;
+    position: absolute;
+
+}
+
+.container_shop{
+    width: 90%;
+    padding: 2.5em;
+    position: relative;
+    top: 100px;
+    left: 50px;
+}
+.container_shop h1{
+    font-size: 3rem;
+    padding-bottom: 2rem ;
+    font-weight: 700;
+}
+.container_shop p{
+    font-size: 1rem;
+    line-height: 25px;
+    padding-right: 50px;
+    color: hsl(0, 0%, 63%);
+    font-weight: 500 ;
+}
+.container_shop a{
+    text-decoration: none;
+    position: relative;
+    top: 2em;
+    text-transform: uppercase;
+    color: black;
+    letter-spacing: 10px;
+}
+.arrow{
+    padding: 20px;
+    width: 150px;
+    margin: 0;
+    background-color: black;
+    position: relative;
+    top: 9.1rem;
+    justify-content: center;
+    align-items: center;
+    z-index: -1;
+   
+    display: flex;
+}
+.arrows-left{
+    width: 50%; cursor: pointer;
+    z-index: 99;
+}
+button{
+    background-color: black;
+    width: 60px;
+    height: 60px;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    top: 153px;
+}
+.right{
+    position: relative;
+    left: -10px;
+}
+.second_hero{
+    width: 100%;
+    height: 30vh;
+    position: relative;
+    top: -8.4rem;
+    display: flex;
+}
+.about_dark{
+    width: 25%;
+    height: 100%;
+    background-image: url(./images/image-about-dark.jpg);
+    background-size: 100% 100%;
+}
+.about_light{
+    width: 25%;
+    height: 100%;
+    background-image: url(./images/image-about-light.jpg);
+    background-size: 100% 100%;
+}
+.about{
+    width: 50%;
+    height: 100%;
+   padding: 50px;
+   
+    
+}
+.about h1{
+    padding-bottom: 10px;
+    padding-left: 20px;text-transform: uppercase;
+}
+.about p{
+    padding: 20px;
+    color: hsl(0, 0%, 63%);
+    line-height: 25px;
+}
+.button{
+    padding: 31px 53px;  
+    width: 300px;  
+    background-color: black;
+    position: relative;
+    top: 156px;
+    
+}
+
+.right{
+    position: relative;
+    left: -5px;
+}
+@media (max-width:1439px) {
+    .logo{
+        margin-inline: 20px;
+    }
+    .container_shop{
+        padding: 0;
+        padding-right: 42px;
+    }
+    .container_shop h1{
+        font-size: 2rem;
+    }
+    .container_shop a{
+        top: 20px;
+        
+    }
+    .container_shop p{
+        font-size: 1rem;
+        line-height: 20px;
+    }
+    .button{
+        padding: 25px 32px;
+        top: 197px;
+    }
+    .about h1{
+        padding: 0;
+    }
+    .about{
+        padding: 20px;
+       margin: 20px;
+    }
+    .about p{
+        line-height: 15px;
+        font-size: 1rem;
+        padding: 0;
+        padding-top: 20px;
+    }
+}
+@media (max-width:55em){
+    .primary-navigation{
+        position: fixed;
+        gap: 2em;
+        flex-direction: row;
+        padding: min(7vh, 5rem) 2em;
+       
+        background-color: #fff;
+        z-index: 1000;
+        transform: translateX(100%);
+        transition: transform 350ms ease-out;
+    }
+    .primary-navigation[data-visible="true"] {
+        transform: translateX(0%);
+    }
+    body{
+        overflow-x: hidden;
+    }
+    .mobile-nav-toggle{
+        position: absolute;
+        background: url('./images/icon-hamburger.svg');
+        background-repeat: no-repeat;
+        width: 2rem;
+        border: 0;
+       display: block;
+        
+        aspect-ratio: 1;
+        
+        top: 2rem;
+        left: 2.5rem;
+       
+        z-index: 9999;
+     
+    }
+    .primary-navigation li{
+        color: black;
+    }
+    .first-hero{
+        flex-direction: column;
+        height: 100%;
+        width: 100%;
+    }
+    .img-container{
+        height: 100%;
+        width: 100%;
+        background-image: url(./images/mobile-image-hero-1.jpg);
+        background-position: 50% 50%;
+        object-fit: cover;
+
+    }
+    nav{
+        justify-content: space-around;
+    }
+    
+}
+@media (max-width:425px){
+  .container_shop{
+    top: 0;
+    left: 0;
+    padding:40px ;
+    margin: 0;
+    width: 100%;
+  }
+  .container_shop h1{
+    padding-bottom: 10px;
+  }
+  .container_shop p{
+    padding: 0;
+  }
+  .button{
+    top: -338px;
+    left: 265px;
+  }
+  .left{
+    left: 269px;
+  }
+  .second_hero{
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+  }
+  .about_dark{
+    width: 100%;
+  }
+  .about{
+    width: 100%;
+    margin: 0;
+   
+  }
+  .about h1{
+    font-size: 1rem;
+    font-weight: 700;
+    letter-spacing: 5px;
+    padding: 20px 0 0 20px;
+  }
+  .about p{
+    padding: 20px;
+  }
+  .about_light{
+    width: 100%;
+  }
+}
